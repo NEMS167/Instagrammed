@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56F6BCF7053492253401AC83 /* Pods_Instagrammed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457FE24F2B87AD7A30A11A57 /* Pods_Instagrammed.framework */; };
 		665203DC1C841C6000E358F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665203DB1C841C6000E358F3 /* AppDelegate.swift */; };
 		665203DE1C841C6000E358F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665203DD1C841C6000E358F3 /* ViewController.swift */; };
 		665203E11C841C6000E358F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665203DF1C841C6000E358F3 /* Main.storyboard */; };
 		665203E31C841C6000E358F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665203E21C841C6000E358F3 /* Assets.xcassets */; };
 		665203E61C841C6000E358F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665203E41C841C6000E358F3 /* LaunchScreen.storyboard */; };
+		665203EE1C841FF500E358F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665203ED1C841FF500E358F3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EF545FCCCE51549A7236613 /* Pods-Instagrammed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagrammed.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagrammed/Pods-Instagrammed.release.xcconfig"; sourceTree = "<group>"; };
+		15B52902316E48CF9E739418 /* Pods-Instagrammed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagrammed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagrammed/Pods-Instagrammed.debug.xcconfig"; sourceTree = "<group>"; };
+		457FE24F2B87AD7A30A11A57 /* Pods_Instagrammed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagrammed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		665203D81C841C6000E358F3 /* Instagrammed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrammed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665203DB1C841C6000E358F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665203DD1C841C6000E358F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		665203E21C841C6000E358F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665203E51C841C6000E358F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665203E71C841C6000E358F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665203ED1C841FF500E358F3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F6BCF7053492253401AC83 /* Pods_Instagrammed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23BC8FEF0176B73EE7A42300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15B52902316E48CF9E739418 /* Pods-Instagrammed.debug.xcconfig */,
+				0EF545FCCCE51549A7236613 /* Pods-Instagrammed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		665203CF1C841C6000E358F3 = {
 			isa = PBXGroup;
 			children = (
 				665203DA1C841C6000E358F3 /* Instagrammed */,
 				665203D91C841C6000E358F3 /* Products */,
+				23BC8FEF0176B73EE7A42300 /* Pods */,
+				8EDD8C0E2EF21E92E0D704CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +75,20 @@
 				665203DB1C841C6000E358F3 /* AppDelegate.swift */,
 				665203DD1C841C6000E358F3 /* ViewController.swift */,
 				665203DF1C841C6000E358F3 /* Main.storyboard */,
+				665203ED1C841FF500E358F3 /* LoginViewController.swift */,
 				665203E21C841C6000E358F3 /* Assets.xcassets */,
 				665203E41C841C6000E358F3 /* LaunchScreen.storyboard */,
 				665203E71C841C6000E358F3 /* Info.plist */,
 			);
 			path = Instagrammed;
+			sourceTree = "<group>";
+		};
+		8EDD8C0E2EF21E92E0D704CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457FE24F2B87AD7A30A11A57 /* Pods_Instagrammed.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665203EA1C841C6000E358F3 /* Build configuration list for PBXNativeTarget "Instagrammed" */;
 			buildPhases = (
+				0CCD40D14AB3B9ACB2BD62B5 /* Check Pods Manifest.lock */,
 				665203D41C841C6000E358F3 /* Sources */,
 				665203D51C841C6000E358F3 /* Frameworks */,
 				665203D61C841C6000E358F3 /* Resources */,
+				11B0054181FD5B07F64F40A7 /* Embed Pods Frameworks */,
+				C2630DD211147A0D54AA86DB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CCD40D14AB3B9ACB2BD62B5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		11B0054181FD5B07F64F40A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instagrammed/Pods-Instagrammed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2630DD211147A0D54AA86DB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instagrammed/Pods-Instagrammed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		665203D41C841C6000E358F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665203EE1C841FF500E358F3 /* LoginViewController.swift in Sources */,
 				665203DE1C841C6000E358F3 /* ViewController.swift in Sources */,
 				665203DC1C841C6000E358F3 /* AppDelegate.swift in Sources */,
 			);
@@ -246,6 +325,7 @@
 		};
 		665203EB1C841C6000E358F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B52902316E48CF9E739418 /* Pods-Instagrammed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instagrammed/Info.plist;
@@ -257,6 +337,7 @@
 		};
 		665203EC1C841C6000E358F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF545FCCCE51549A7236613 /* Pods-Instagrammed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instagrammed/Info.plist;
@@ -285,6 +366,7 @@
 				665203EC1C841C6000E358F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

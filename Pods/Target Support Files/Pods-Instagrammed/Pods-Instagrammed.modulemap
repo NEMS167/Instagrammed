@@ -1,0 +1,6 @@
+framework module Pods_Instagrammed {
+  umbrella header "Pods-Instagrammed-umbrella.h"
+
+  export *
+  module * { export * }
+}
