@@ -17,11 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "myAppId"
                 configuration.clientKey = "deavfrvcfvcscfwacwaaecwsedcfwsecf"
-                configuration.server = "mongodb://heroku_w58pfkjt:hu3aitp9ufevdkr27a59653bj6@ds019028.mlab.com:19028/heroku_w58pfkjt"
+                configuration.server = "https://enigmatic-fortress-93905.herokuapp.com/parse"
             })
+            
         )
+        if PFUser.currentUser() != nil {
+            print("There is a current user")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("LoginViewController")
+            
+            window?.rootViewController = vc
+        }
+        
+        // Watch for if the user logs out
+        NSNotificationCenter.defaultCenter().addObserverForName("userLoggedOut", object: nil, queue: NSOperationQueue.mainQueue()) { (NSNotification) -> Void in
+            print("Logged")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            
+            self.window?.rootViewController = vc
+        }
+        
         return true
     }
+    
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
